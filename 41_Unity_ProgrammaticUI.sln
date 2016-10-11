@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{02C0B807-A9C0-F258-1E0F-FAA80C7CFBBD}") = "41_Unity_ProgrammaticUI", "Assembly-CSharp.csproj", "{76D429FC-53B6-6854-E248-9EB858073181}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{76D429FC-53B6-6854-E248-9EB858073181}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76D429FC-53B6-6854-E248-9EB858073181}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76D429FC-53B6-6854-E248-9EB858073181}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76D429FC-53B6-6854-E248-9EB858073181}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
