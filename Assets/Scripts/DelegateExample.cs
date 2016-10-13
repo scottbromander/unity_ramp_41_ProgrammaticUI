@@ -3,25 +3,18 @@ using System.Collections;
 
 public class DelegateExample : MonoBehaviour {
 
-	delegate void ExampleDelegate();
+	delegate void ExampleDelegate(int a, int b);
 
-	void ThisIsADelegate(){
-		Debug.Log ("Here we are!");
+	void AddDelegate(int a, int b){
+		Debug.Log ("Here is the sum: " + (a + b));
 	}
 
-	void ThisIsAnotherDelete(){
-		Debug.Log ("BOOM! Reassigned!");
+	void SubtractDelegate(int a, int b){
+		Debug.Log ("Here is the difference: " + (a - b));
 	}
 
-	// Use this for initialization
-	void Start () {
-		ExampleDelegate methodToUse = ThisIsAnotherDelete;
-
-		methodToUse.Invoke ();
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+	void Start(){
+		ExampleDelegate methodToUse = SubtractDelegate;
+		methodToUse.Invoke (4, 5);
 	}
 }
