@@ -9,9 +9,13 @@ public class DelegateExample : MonoBehaviour {
 		Debug.Log ("Here we are!");
 	}
 
+	void ThisIsAnotherDelete(){
+		Debug.Log ("BOOM! Reassigned!");
+	}
+
 	// Use this for initialization
 	void Start () {
-		ExampleDelegate methodToUse = ThisIsADelegate;
+		ExampleDelegate methodToUse = ThisIsAnotherDelete;
 
 		methodToUse.Invoke ();
 	}
