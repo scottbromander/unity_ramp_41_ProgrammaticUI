@@ -7,10 +7,15 @@ public class Events : MonoBehaviour {
 
 	public event CustomEvent MouseOver;
 	public event CustomEvent MouseLeftClick;
-	
+
+	private RectTransform myRect;
+
+	void Start(){
+		myRect = this.GetComponent<RectTransform> ();
+	}
+
 	// Update is called once per frame
 	void Update () {
-		RectTransform myRect = this.GetComponent<RectTransform> ();
 		Rect onScreenRect = myRect.rect;
 		onScreenRect.Set (onScreenRect.x + this.transform.position.x, 
 			onScreenRect.y + this.transform.position.y,
