@@ -48,6 +48,7 @@
      <Compile Include="Assets\Scripts\ClickWord.cs" />
      <Compile Include="Assets\Scripts\Decay.cs" />
      <Compile Include="Assets\Scripts\DelegateExample.cs" />
+     <Compile Include="Assets\Scripts\EventTriggerMod.cs" />
      <Compile Include="Assets\Scripts\Events.cs" />
      <Compile Include="Assets\Scripts\HitEffectConstructor.cs" />
      <Compile Include="Assets\Scripts\Listener.cs" />
