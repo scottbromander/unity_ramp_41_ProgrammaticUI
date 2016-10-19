@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/AddListenersToButtons.unity
+- path: Assets/Scenes/EventTriggerComponent.unity
   isLoaded: 1
   isActive: 1

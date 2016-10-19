@@ -1,12 +1,13 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/OurButtonHandler.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/EventTriggerMod.cs">
     <Files>
+      <File FileName="Assets/Scripts/EventTriggerMod.cs" Line="28" Column="3" />
       <File FileName="Assets/Scripts/DelegateExample.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/HitEffectConstructor.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/ClickWord.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/MoveInDirection.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/OurButtonHandler.cs" Line="7" Column="22" />
+      <File FileName="Assets/Scripts/OurButtonHandler.cs" Line="7" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
