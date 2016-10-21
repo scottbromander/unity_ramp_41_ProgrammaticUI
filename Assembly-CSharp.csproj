@@ -53,6 +53,7 @@
      <Compile Include="Assets\Scripts\HitEffectConstructor.cs" />
      <Compile Include="Assets\Scripts\Listener.cs" />
      <Compile Include="Assets\Scripts\MoveInDirection.cs" />
+     <Compile Include="Assets\Scripts\MyEventHandlers.cs" />
      <Compile Include="Assets\Scripts\OurButtonHandler.cs" />
  <Reference Include="UnityEngine.Networking">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
