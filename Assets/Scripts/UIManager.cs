@@ -21,14 +21,16 @@ public class UIManager : MonoBehaviour {
 		eventSystem.AddComponent<UnityEngine.EventSystems.EventSystem> ();
 		eventSystem.AddComponent<UnityEngine.EventSystems.StandaloneInputModule> ();
 
+		CreateSprite ("Star");
 	}
 
-	void CreateSprite() {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+	void CreateSprite(string spriteName) {
+		GameObject sprite = new GameObject (spriteName);
+		Sprite mySprite = Resources.Load<Sprite> (spriteName);
+
+		Image spriteImage = sprite.AddComponent<Image> ();
+		spriteImage.sprite = mySprite;
+
+		sprite.transform.SetParent (baseCanvas.transform);
 	}
 }
