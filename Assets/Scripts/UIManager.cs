@@ -36,5 +36,6 @@ public class UIManager : MonoBehaviour {
 		RectTransform rectTransform = sprite.GetComponent<RectTransform> ();
 
 		Vector3 position = new Vector3 (50, 50, 0);
+		rectTransform.position = position;
 	}
 }
