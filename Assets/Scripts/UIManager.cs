@@ -32,5 +32,9 @@ public class UIManager : MonoBehaviour {
 		spriteImage.sprite = mySprite;
 
 		sprite.transform.SetParent (baseCanvas.transform);
+
+		RectTransform rectTransform = sprite.GetComponent<RectTransform> ();
+
+		Vector3 position = new Vector3 (50, 50, 0);
 	}
 }
