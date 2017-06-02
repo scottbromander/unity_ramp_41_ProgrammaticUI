@@ -35,7 +35,19 @@ public class UIManager : MonoBehaviour {
 
 		RectTransform rectTransform = sprite.GetComponent<RectTransform> ();
 
+		float imageSize = 100;
+
 		Vector3 position = new Vector3 (50, 50, 0);
-		rectTransform.position = position;
+		rectTransform.SetInsetAndSizeFromParentEdge (
+			RectTransform.Edge.Right,
+			position.x,
+			imageSize
+		);
+		rectTransform.SetInsetAndSizeFromParentEdge (
+			RectTransform.Edge.Bottom,
+			position.y,
+			imageSize
+		);
+
 	}
 }
