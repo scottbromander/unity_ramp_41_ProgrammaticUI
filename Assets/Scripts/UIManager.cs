@@ -5,10 +5,20 @@ using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour {
 
+	public static UIManager instance;
 	Canvas baseCanvas;
+	public float imageSize = 50;
 
 	// Use this for initialization
 	void Start () {
+		if (UIManager.instance != null) {
+			Debug.Log ("Only one instance of UIManager allowed");
+			this.enabled = false;
+			return;
+		}
+
+		UIManager.instance = this;
+
 		GameObject canvas = new GameObject ("Canvas");
 		baseCanvas = canvas.AddComponent<Canvas> ();
 		baseCanvas.renderMode = RenderMode.ScreenSpaceOverlay;
@@ -21,10 +31,10 @@ public class UIManager : MonoBehaviour {
 		eventSystem.AddComponent<UnityEngine.EventSystems.EventSystem> ();
 		eventSystem.AddComponent<UnityEngine.EventSystems.StandaloneInputModule> ();
 
-		CreateSprite ("Star");
+		CreateSprite (new Vector3(0,0,0), "Star");
 	}
 
-	void CreateSprite(string spriteName) {
+	public GameObject CreateSprite(Vector3 position, string spriteName) {
 		GameObject sprite = new GameObject (spriteName);
 		Sprite mySprite = Resources.Load<Sprite> (spriteName);
 
@@ -37,7 +47,6 @@ public class UIManager : MonoBehaviour {
 
 		float imageSize = 100;
 
-		Vector3 position = new Vector3 (50, 50, 0);
 		rectTransform.SetInsetAndSizeFromParentEdge (
 			RectTransform.Edge.Right,
 			position.x,
