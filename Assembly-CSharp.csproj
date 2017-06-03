@@ -56,6 +56,7 @@
      <Compile Include="Assets\Scripts\MoveInDirection.cs" />
      <Compile Include="Assets\Scripts\MyEventHandlers.cs" />
      <Compile Include="Assets\Scripts\OurButtonHandler.cs" />
+     <Compile Include="Assets\Scripts\SpriteBehavior.cs" />
      <Compile Include="Assets\Scripts\UIManager.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

@@ -58,5 +58,6 @@ public class UIManager : MonoBehaviour {
 			imageSize
 		);
 
+		return sprite;
 	}
 }
