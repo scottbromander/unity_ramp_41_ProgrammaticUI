@@ -6,13 +6,17 @@ using UnityEngine.UI;
 
 public class SpriteBehavior : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHandler {
 
-	// Use this for initialization
-	void Start () {
-		
+	Vector3 initialPosition;
+
+	public void OnBeginDrag(PointerEventData eventData){
+		throw new NotImplemenetedException ();
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+
+	public void OnDrag(PointerEventData eventData){
+		throw new NotImplemenetedException ();
+	}
+
+	public void OnEndDrag(PointerEventData eventData){
+		throw new NotImplemenetedException ();
 	}
 }
