@@ -9,14 +9,14 @@ public class SpriteBehavior : MonoBehaviour, IBeginDragHandler, IEndDragHandler,
 	Vector3 initialPosition;
 
 	public void OnBeginDrag(PointerEventData eventData){
-		throw new NotImplemenetedException ();
+		//throw new NotImplemenetedException ();
 	}
 
 	public void OnDrag(PointerEventData eventData){
-		throw new NotImplemenetedException ();
+		//throw new NotImplemenetedException ();
 	}
 
 	public void OnEndDrag(PointerEventData eventData){
-		throw new NotImplemenetedException ();
+		//throw new NotImplemenetedException ();
 	}
 }
