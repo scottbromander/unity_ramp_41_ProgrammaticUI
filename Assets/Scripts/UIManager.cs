@@ -45,7 +45,6 @@ public class UIManager : MonoBehaviour {
 
 		RectTransform rectTransform = sprite.GetComponent<RectTransform> ();
 
-		float imageSize = 100;
 
 		rectTransform.SetInsetAndSizeFromParentEdge (
 			RectTransform.Edge.Right,
