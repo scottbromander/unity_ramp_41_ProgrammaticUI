@@ -16,7 +16,9 @@ public class SpriteBehavior : MonoBehaviour, IBeginDragHandler, IEndDragHandler,
 	}
 
 	public void OnDrag(PointerEventData eventData){
-		//throw new NotImplemenetedException ();
+		if (draggingElement != null) {
+			draggingElement.transform.position = Input.mousePosition;
+		}
 	}
 
 	public void OnEndDrag(PointerEventData eventData){
