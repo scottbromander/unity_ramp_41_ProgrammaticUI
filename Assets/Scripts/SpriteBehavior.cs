@@ -22,6 +22,10 @@ public class SpriteBehavior : MonoBehaviour, IBeginDragHandler, IEndDragHandler,
 	}
 
 	public void OnEndDrag(PointerEventData eventData){
-		//throw new NotImplemenetedException ();
+		float imageSize = UIManager.instance.imageSize;
+
+		if ((Input.GetKey (KeyCode.LeftControl) || Input.GetKey (KeyCode.RightControl))) {
+
+		}
 	}
 }
