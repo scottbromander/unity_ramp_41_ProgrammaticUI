@@ -57,6 +57,8 @@ public class UIManager : MonoBehaviour {
 			imageSize
 		);
 
+		sprite.AddComponent<SpriteBehavior> ();
+
 		return sprite;
 	}
 }

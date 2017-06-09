@@ -24,8 +24,15 @@ public class SpriteBehavior : MonoBehaviour, IBeginDragHandler, IEndDragHandler,
 	public void OnEndDrag(PointerEventData eventData){
 		float imageSize = UIManager.instance.imageSize;
 
-		if ((Input.GetKey (KeyCode.LeftControl) || Input.GetKey (KeyCode.RightControl))) {
-
+		if ((Input.GetKey (KeyCode.LeftControl) || Input.GetKey (KeyCode.RightControl)) &&
+		    (draggingElement.transform.position - initialPosition).magnitude > imageSize) {
+			draggingElement = null;
+		} else {
+			this.transform.position = draggingElement.transform.position;
+			Destroy (draggingElement);
+			draggingElement = null;
 		}
+
+		this.GetComponent<Image> ().color = Color.white;
 	}
 }
