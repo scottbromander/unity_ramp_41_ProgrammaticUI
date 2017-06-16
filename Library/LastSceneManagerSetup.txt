@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/EventSystemInterface.unity
+- path: Assets/Scenes/InterfaceViaScripts.unity
   isLoaded: 1
   isActive: 1
