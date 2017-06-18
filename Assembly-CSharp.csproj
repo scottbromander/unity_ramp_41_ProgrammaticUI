@@ -52,6 +52,7 @@
      <Compile Include="Assets\Scripts\EventTriggerMod.cs" />
      <Compile Include="Assets\Scripts\Events.cs" />
      <Compile Include="Assets\Scripts\HitEffectConstructor.cs" />
+     <Compile Include="Assets\Scripts\InWorldCanvasScaler.cs" />
      <Compile Include="Assets\Scripts\Listener.cs" />
      <Compile Include="Assets\Scripts\MoveInDirection.cs" />
      <Compile Include="Assets\Scripts\MyEventHandlers.cs" />
