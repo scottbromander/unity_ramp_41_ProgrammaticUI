@@ -4,13 +4,12 @@ using UnityEngine;
 
 public class InWorldCanvasScaler : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+	public float pixlesPerUnit = 25f;
+
+	public void OnValidate(){
+		transform.localScale = new Vector3 (
+			1 / pixlesPerUnit,
+			1 / pixlesPerUnit, 
+			1);
 	}
 }
