@@ -56,6 +56,7 @@
      <Compile Include="Assets\Scripts\Listener.cs" />
      <Compile Include="Assets\Scripts\MoveInDirection.cs" />
      <Compile Include="Assets\Scripts\MyEventHandlers.cs" />
+     <Compile Include="Assets\Scripts\NestedMenu.cs" />
      <Compile Include="Assets\Scripts\OurButtonHandler.cs" />
      <Compile Include="Assets\Scripts\SpriteBehavior.cs" />
      <Compile Include="Assets\Scripts\UIManager.cs" />
